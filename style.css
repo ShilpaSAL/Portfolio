@@ -31,17 +31,10 @@ body {
 .nav-links a {
   text-decoration: none;
   color: #ccc;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 .nav-links a:hover {
   color: #00bcd4;
-}
-.btn.download {
-  background-color: #00bcd4;
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
 }
 
 /* Hero Section */
@@ -49,47 +42,104 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 20px;
-  text-align: center;
+  padding: 80px 40px;
+  gap: 60px;
+  flex-wrap: wrap;
 }
-.hero-content {
-  max-width: 600px;
+
+/* Profile Frame */
+.profile-wrapper {
+  background: radial-gradient(circle at center, #0f0f0f 0%, #111 100%);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 188, 212, 0.6);
+  transition: transform 0.3s ease;
+}
+.profile-wrapper:hover {
+  transform: scale(1.05);
 }
 .profile-pic {
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  border: 5px solid #00bcd4;
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.5);
 }
-.hero h1 {
-  font-size: 2rem;
+
+/* Hero Text */
+.hero-text {
+  max-width: 500px;
 }
-.hero h1 span {
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero-text h1 span {
   color: #00bcd4;
 }
-.hero h2 {
-  font-size: 1.2rem;
-  margin: 10px 0;
+.hero-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
   color: #aaa;
 }
-.hero p {
-  margin: 20px 0;
+.hero-text p {
+  font-size: 1rem;
   color: #bbb;
+  margin-bottom: 30px;
 }
+
+/* Buttons */
 .hero-buttons {
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 .btn {
   background-color: #00bcd4;
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
-  transition: background-color 0.3s;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 .btn:hover {
   background-color: #0097a7;
+}
+.btn.contact {
+  background-color: #222;
+  border: 1px solid #00bcd4;
+}
+.btn.contact:hover {
+  background-color: #333;
+}
+
+.skills-list {
+  margin-top: 20px;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #bbb;
+}
+.skills-list li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+.skills-list strong {
+  color: #00bcd4;
+}
+.page-content {
+  padding: 80px 40px;
+  max-width: 800px;
+  margin: auto;
+  color: #ccc;
+}
+.page-content h1 {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+.page-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
 }
