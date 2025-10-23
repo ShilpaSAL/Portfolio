@@ -143,3 +143,41 @@ body {
   line-height: 1.7;
   margin-bottom: 20px;
 }
+.education-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.edu-card {
+  background-color: #111;
+  border-left: 4px solid #00bcd4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 14px rgba(0, 188, 212, 0.4);
+}
+
+.edu-card h3 {
+  color: #00bcd4;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+
+.edu-card .year {
+  font-weight: normal;
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-left: 10px;
+}
+
+.edu-card p {
+  color: #ccc;
+  margin: 4px 0;
+}
