@@ -248,4 +248,46 @@ body {
   font-size: 0.95rem;
   margin-left: 10px;
 }
-/* contact 
+/* contact */
+/* Contact Static Display */
+.contact-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #bbb;
+  margin-bottom: 40px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-box {
+  background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(0, 188, 212, 0.3);
+}
+
+.contact-box h3 {
+  font-size: 1.3rem;
+  color: #00bcd4;
+  margin-bottom: 10px;
+  text-shadow: 0 0 6px rgba(0, 188, 212, 0.4);
+}
+
+.contact-box p {
+  font-size: 1rem;
+  color: #ccc;
+  word-break: break-word;
+}
