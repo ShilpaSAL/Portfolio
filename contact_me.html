@@ -17,16 +17,27 @@
         <li><a href="education.html">Education</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="contact_me.html">Contact</a></li>
+        <li><a href="Shilpa Poojary.pdf" class="btn download-cv" download>Download CV</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="page-content">
-    <h1 class="section-heading"> Contact Me</h1>
-    <p>If you'd like to collaborate, ask a question, or just say hello, feel free to reach out!</p>
-    <p><strong>Email:</strong> shilpa@example.com</p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/shilpa" target="_blank">linkedin.com/in/shilpa</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/shilpa" target="_blank">github.com/shilpa</a></p>
+  <section class="contact-card">
+    <h1 class="contact-title">Contact <span class="highlight">Me!</span></h1>
+
+    <form class="contact-form" onsubmit="sendEmail(event)">
+      <div class="form-row">
+        <input type="text" id="name" class="form-input" placeholder="Full Name" required />
+        <input type="email" id="email" class="form-input" placeholder="E-Mail Address" required />
+        <input type="tel" id="mobile" class="form-input" placeholder="Mobile Number" required />
+        <input type="text" id="subject" class="form-input" placeholder="E-Mail Subject" required />
+      </div>
+
+      <textarea id="message" class="form-textarea" placeholder="Your Message">Hi</textarea>
+      <button type="submit" class="form-button">Send Message</button>
+    </form>
   </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
