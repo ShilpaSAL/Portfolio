@@ -153,21 +153,43 @@ body {
 }
 
 /* Skills List */
-.skills-list {
-  margin-top: 20px;
-  padding-left: 20px;
-  list-style-type: disc;
-  color: #bbb;
+/* Skill Buttons */
+.skills-buttons {
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.skills-list li {
-  margin-bottom: 12px;
-  line-height: 1.6;
-}
-
-.skills-list strong {
+.skills-buttons li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #111;
+  border: 1px solid #00bcd4;
+  padding: 12px 20px;
+  border-radius: 30px;
   color: #00bcd4;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.2);
 }
+
+.skills-buttons li:hover {
+  background: #00bcd4;
+  color: black;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.6);
+  transform: translateY(-3px);
+}
+
+.skills-buttons li img {
+  width: 24px;
+  height: 24px;
+}
+
 
 /* Shared Card Style */
 .edu-card,
